@@ -13,7 +13,7 @@ class MailNotifier(object):
             u"subject: " + subject,
             u"to: " + recipient,
             u"mime-version: 1.0",
-            u"content-type: text/html"
+            u"content-type: text/html; charset=utf-8"
         ]
 
         headers = u"\r\n".join(headers)
